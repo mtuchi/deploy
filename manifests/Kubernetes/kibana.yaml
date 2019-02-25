@@ -44,7 +44,7 @@ metadata:
   namespace: waziup
 spec:
   rules:
-  - host: kibana.waziup.io
+  - host: kibana.api.iot.bongolive.co.tz
     http:
       paths:
       - path: /

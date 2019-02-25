@@ -57,7 +57,7 @@ metadata:
   namespace: waziup
 spec:
   rules:
-  - host: aam.waziup.io
+  - host: aam.api.iot.bongolive.co.tz
     http:
       paths:
       - backend:

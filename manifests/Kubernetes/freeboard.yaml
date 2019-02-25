@@ -40,7 +40,7 @@ metadata:
   namespace: waziup
 spec:
   rules:
-  - host: freeboard.waziup.io
+  - host: freeboard.api.iot.bongolive.co.tz
     http:
       paths:
       - path: /

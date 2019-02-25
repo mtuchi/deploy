@@ -73,7 +73,7 @@ metadata:
   namespace: waziup
 spec:
   rules:
-  - host: dashboard.waziup.io
+  - host: dashboard.api.iot.bongolive.co.tz
     http:
       paths:
       - path: /

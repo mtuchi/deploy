@@ -2,7 +2,7 @@ WAZIUP Front-end Proxy
 ======================
 
 This proxy is the entry point to the waziup platform in a Cloud configuration.
-It routes the traffic to both production (*.waziup.io) and staging (*.staging.waziup.io) platforms.
+It routes the traffic to both production (*.api.iot.bongolive.co.tz) and staging (*.staging.api.iot.bongolive.co.tz) platforms.
 It also adds HTTPS capacity to the platform using TLS termination.
 
 Usage
@@ -20,11 +20,11 @@ Develop
 
 To run the proxy locally, you need to generate a self-signed certificate:
 ```
- sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout privkey.pem -out fullchain.pem -subj '/CN=*.waziup.io'
+ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout privkey.pem -out fullchain.pem -subj '/CN=*.api.iot.bongolive.co.tz'
 ```
 The certificate will be used by the proxy. To start it:
 ```
-docker run -it -p 80:80 -p 443:443 -v <platform_host_path>/proxy:/certs/live/dev.waziup.io/ waziup/proxy
+docker run -it -p 80:80 -p 443:443 -v <platform_host_path>/proxy:/certs/live/dev.api.iot.bongolive.co.tz/ waziup/proxy
 ```
 
 To test the proxy, we will use cURL. However, it is necessary to trust the self-signed certificate:
@@ -34,9 +34,9 @@ sudo update-ca-certificates
 ```
 We can finally launch the cURL command:
 ```
-curl --resolve api.waziup.io:443:127.0.0.1 https://api.waziup.io:443/
+curl --resolve api.api.iot.bongolive.co.tz:443:127.0.0.1 https://api.api.iot.bongolive.co.tz:443/
 ```
-We need to trick cURL with --resolve, so the request to api.waziup.io is re-routed to our localhost proxy.
+We need to trick cURL with --resolve, so the request to api.api.iot.bongolive.co.tz is re-routed to our localhost proxy.
 The proxy will then take care to fetch the online platform.
 
 

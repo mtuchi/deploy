@@ -62,7 +62,7 @@ metadata:
   namespace: waziup
 spec:
   rules:
-  - host: elasticsearch.waziup.io
+  - host: elasticsearch.api.iot.bongolive.co.tz
     http:
       paths:
       - path: /

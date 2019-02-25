@@ -48,7 +48,7 @@ metadata:
   namespace: waziup
 spec:
   rules:
-  - host: brokerdb.waziup.io
+  - host: brokerdb.api.iot.bongolive.co.tz
     http:
       paths:
       - path: /

@@ -282,7 +282,7 @@
         },
         {
           "name": "HTTP_URL",
-          "value": "http://dev.waziup.io:80"
+          "value": "http://dev.api.iot.bongolive.co.tz:80"
         },
         {
           "name": "HTTPS_ENABLED",
@@ -294,15 +294,15 @@
         },
         {
           "name": "HTTPS_TLS_CRT",
-          "value": "/certs/live/dev.waziup.io/cert.pem"
+          "value": "/certs/live/dev.api.iot.bongolive.co.tz/cert.pem"
         },
         {
           "name": "HTTPS_TLS_KEY",
-          "value": "/certs/live/dev.waziup.io/privkey.pem"
+          "value": "/certs/live/dev.api.iot.bongolive.co.tz/privkey.pem"
         },
         {
           "name": "HTTPS_URL",
-          "value": "https://dev.waziup.io:443"
+          "value": "https://dev.api.iot.bongolive.co.tz:443"
         },
         {
           "name": "KEYCLOAK_URL",

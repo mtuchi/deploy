@@ -25,11 +25,11 @@
       "environment": [
         {
           "name": "API_SERVER_URL",
-          "value": "http://api.waziup.io/api"
+          "value": "http://api.api.iot.bongolive.co.tz/api"
         },
         {
           "name": "KEYCLOAK_URL",
-          "value": "http://dev.waziup.io:8080/auth"
+          "value": "http://dev.api.iot.bongolive.co.tz:8080/auth"
         },
         {
           "name": "SERVER_PORT",
